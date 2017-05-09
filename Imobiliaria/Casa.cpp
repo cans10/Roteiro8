@@ -9,6 +9,8 @@ Casa::Casa(string l, string b, int n, string c, string cep):Imovel (l,b,n, c, ce
 }
 
 string Casa::getDescricao(){
-    string desc = "Pavimento: " ## getNumDePavimentos() ## "; Quartos: " ## getQuantDeQuartos() ## "; Terreno: " ## getAreaDoTerreno() ## "; Area Construida: "+ getAreaConstruida();
+    string desc = strcat("Pavimento: ", getNumDePavimentos());
+    desc = strcat(desc, "; Quartos");
+    desc = strcat(desc, getQuantDeQuartos());
     return desc;
 }

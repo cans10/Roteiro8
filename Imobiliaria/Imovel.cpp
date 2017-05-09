@@ -8,7 +8,8 @@ Imovel::Imovel (string l, string b, int n, string c, string cep) {
     setCep(cep);
 }
 Imovel::getEndereco(){
-    string ender = getLogradouro() ## " - " + getBairro() ## " - " ## getNumero() ## " - " + getCidade() ## " - " + getCep();
+    string ender = strcat(getLogradouro(), "" - ");
+    ender = strcat( ender, getBairro());
     return ender;
 }
 Imovel::getDescricao(){
